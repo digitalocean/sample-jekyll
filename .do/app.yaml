@@ -1,0 +1,9 @@
+name: sample-jekyll
+static_sites:
+- build_command: bundle exec jekyll build -d ./public
+  environment_slug: jekyll
+  github:
+    branch: master
+    deploy_on_push: true
+    repo: digitalocean/sample-jekyll
+  name: sample-jekyll
